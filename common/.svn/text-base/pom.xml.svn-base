@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>nl.fransvandersluis</groupId>
+    <artifactId>common</artifactId>
+    <version>1.0</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.savage7.maven.plugins</groupId>
+                <artifactId>maven-external-dependency-plugin</artifactId>
+                <version>0.4</version>
+                <inherited>false</inherited>
+                <configuration>
+                    <stagingDirectory>
+                        ${project.build.directory}/dependencies/
+                    </stagingDirectory>
+                    <createChecksum>true</createChecksum>
+                    <skipChecksumVerification>false</skipChecksumVerification>
+                    <force>false</force>
+                    <artifactItems>
+                        <artifactItem>
+                            <groupId>no.uib.cipr.matrix</groupId>
+                            <artifactId>no.uib.cipr.matrix</artifactId>
+                            <version>0.9.13</version>
+                            <packaging>jar</packaging>
+                            <downloadUrl>http://matrix-toolkits-java.googlecode.com/files/mtj-0.9.13.zip</downloadUrl>
+                            <extractFile>mtj-{version}/mtj-{version}.jar</extractFile>
+                        </artifactItem>
+                    </artifactItems>
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>clean-external-dependencies</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <!--							 mvn com.savage7.maven.plugins:maven-external-dependency-plugin:clean-external -->
+                            <goal>clean-external</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>resolve-install-external-dependencies</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <!--							 mvn com.savage7.maven.plugins:maven-external-dependency-plugin:resolve-external -->
+                            <goal>resolve-external</goal>
+
+                            <!--							 mvn com.savage7.maven.plugins:maven-external-dependency-plugin:install-external -->
+                            <goal>install-external</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>deploy-external-dependencies</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <!--							 mvn com.savage7.maven.plugins:maven-external-dependency-plugin:deploy-external -->
+                            <goal>deploy-external</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>r07</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>no.uib.cipr.matrix</groupId>
+            <artifactId>no.uib.cipr.matrix</artifactId>
+            <version>0.9.13</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>bouncycastle</groupId>
+            <artifactId>bcmail-jdk16</artifactId>
+            <version>140</version>
+        </dependency>-->
+    </dependencies>
+
+</project>
