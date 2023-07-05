@@ -24,4 +24,4 @@ The code relies on extensive resources to run. It needs:
 * ESA model. Can be generated using data/src/scala/ix/complexity/lucene3/esa/index/
 
 ## R-code
-R-code for modelling is included in the directory __r-code__. The main loop that runs the nested resampling is in the file __r-code/train_model.R__. It expects that textual features to be found in a database.    
+R-code for modelling is included in the directory __r-code__. The main loop that runs the nested resampling is in the file __r-code/train_model.R__. It expects that textual features to be found in a database. Model files are outputted in a subfolder _r-code/out/_.    
