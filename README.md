@@ -1,4 +1,4 @@
-# Wundt-Scala
+# Wundt
 This repository contains the code base accompanying the paper 'Artificial Intelligence can Stimulate Reading'. 
 It is part of two repositories, the current one containing scala code for text analysis and another repository containing r-code used for modelling.
 
