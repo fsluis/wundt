@@ -1,9 +1,9 @@
 # Wundt
 This repository contains the code base accompanying the paper 'Artificial Intelligence can Stimulate Reading'. 
-It is part of two repositories, the current one containing scala code for text analysis and another repository containing r-code used for modelling.
+It consists of two parts: The main Scala code for text analysis and the r-code used for modelling.
 
 ## Contents
-The code is divided into subprojects according to shared dependencies and functionality.
+The Scala code is divided into subprojects according to shared dependencies and functionality.
 
 The following subprojects are relevant:
 * __data__. The main control flow for reading data sets, analysing features, and submitting the results back to a database. Complexity features are derived in the scala package _ix/data/com/features_. This is the recommended starting point for review.
@@ -16,7 +16,7 @@ The following subprojects can be considered boilerplate:
 * __shaded__ contains external projects with specific dependencies dropped or changed, to solve dependency conflicts. 
 
 ## Resources
-The code relies on extensive resources to run. It needs:
+The Scala code relies on extensive resources to run. It needs:
 * Input data. Currently included is a file with 10 pairs of simple and English Wikipedia articles (at resources/data) for testing.
 * WordNet. Currently included is version 3.1.
 * A large language model (CommonCrawl). Can be obtained from http://statmt.org/ngrams.
