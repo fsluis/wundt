@@ -1,5 +1,6 @@
 # Wundt
-This repository contains the code base accompanying the paper 'Artificial Intelligence can Stimulate Reading'. 
+This repository contains the code base accompanying the paper 'Computational Modelling of Textual Complexity
+reveals Wundt-Berlyne Curve of Human Interest'. 
 It consists of two parts: The main Scala code for text analysis and the r-code used for modelling.
 
 ## Contents
