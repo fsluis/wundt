@@ -1,5 +1,5 @@
 # Wundt
-This repository contains the code base accompanying the paper 'Modelling textual complexity reveals the Wundt-Berlyne inverted-U of human interest'. 
+This repository contains the code base accompanying the paper 'Intermediate Complexity makes Texts Interesting'. 
 It consists of two parts: The main Scala code for text analysis and the r-code used for modelling.
 
 ## Contents
