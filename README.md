@@ -1,5 +1,5 @@
 # Wundt
-This repository contains the code base accompanying the paper 'Intermediate Complexity makes Texts Interesting'. 
+This repository contains the code base accompanying the paper 'Wundt-Berlyne’s inverted-U unveils that intermediate complexity makes texts interesting'. 
 It consists of two parts: The main Scala code for text analysis and the r-code used for modelling.
 
 ## Contents
@@ -25,3 +25,7 @@ The Scala code relies on extensive resources to run. It needs:
 
 ## R-code
 R-code for modelling is included in the directory __r-code__. The main loop that runs the nested resampling is in the file __r-code/train_model.R__. It expects that textual features to be found in a database. Model files are outputted in a subfolder _r-code/out/_.    
+
+## Final model
+The final glmnet model, as trained on EnSiWiki2020 and described in the paper, is found in __models/final-glmnet-ridge-na.rds__. This version is extracted from MLR3 (the machine learning framework used) to result in a much smaller and easier to work with model file.
+
