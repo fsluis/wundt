@@ -1,5 +1,5 @@
 # Wundt
-This repository contains the code base accompanying the paper 'Wundt-Berlyne’s inverted-U unveils that intermediate complexity makes texts interesting'. 
+This repository contains the code base accompanying the paper 'Textual Complexity Facilitates Epistemically Resilient AI'. 
 It consists of two parts: The main Scala code for text analysis and the r-code used for modelling.
 
 ## Contents
