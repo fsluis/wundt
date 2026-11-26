@@ -1,0 +1,23 @@
+# sessionInfo.txt - tested software environment (R and package versions)
+# generated: 2026-11-26 15:57 CET
+
+R: R version 4.4.3 (2025-02-28)
+platform: aarch64-apple-darwin24.2.0
+
+# relevant package versions:
+mlr3             1.8.0
+mlr3pipelines    0.5.2
+mlr3learners     0.6.0
+mlr3tuning       0.20.0
+future           1.33.2
+glmnet           5.1
+randomForest     4.7.1.2
+xgboost          3.2.1.1
+dplyr            1.1.4
+readr            2.1.5
+sandwich         3.1.0
+lmtest           0.9.40
+lavaan           0.6.18
+semTools         0.5.6
+lm.beta          1.7.2
+testthat         3.3.2

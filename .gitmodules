@@ -1,0 +1,3 @@
+[submodule "external/textual-complexity"]
+	path = external/textual-complexity
+	url = https://github.com/fsluis/textual-complexity.git
